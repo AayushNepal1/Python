@@ -1,0 +1,5 @@
+In python I have learned about the concept of the object oriented progarmming.
+In python I have learned how to instantcate the object.
+In python I have learned about the modules and sub modules.
+In python I have learned about the file handaling.
+In python I have learned about the packages which helps to make the collection of modules that are related to each other.
