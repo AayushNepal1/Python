@@ -1,2 +1,5 @@
-.vscode
-.images
+# Ignore the .ide files
+.vscode/
+
+# Igrones the self created directory
+/images
