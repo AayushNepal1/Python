@@ -1,6 +1,3 @@
-from curses.ascii import isdigit
-
-
 class Employee:
     """Creating an Employee Class."""
     
