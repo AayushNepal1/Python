@@ -6,20 +6,23 @@ class EmployeeTestCase(unittest.TestCase):
     """Testing the Employee Class."""
 
     def setUp(self) :
-        first = "First Name: "
-        last = "Last Name: "
-        salary = "Salary: "
-        self.my_employee = Employee(first, last, salary)
-        self.store = ['Aayush', 'Nepal', 1000]
+        self.my_employee = Employee(first='Aayush', last='Nepal', salary='1000')
+        self.store_data = ('Aayush', 'Nepal', '1000')
     
     def test_give_default_raise(self):
         """Testing a salary raise for an employee."""
-        self.my_employee.stored_data(self.store)
-        self.assertIn(self.store[0], self.my_employee)
-    
-    def test_give_custom_raise(self):
-        self.my_employee.store_data(self.store)
+        for store in self.store_data:
+            self.my_employee.stored_data(store)
+        for store in self.store_data:
+            self.assertIn(store, self.my_employee.store_data)
 
+
+    def test_give_custom_raise(self):
+        "Test all the employee salaries and there raise of the salaries"
+        for store in self.store_data:
+            self.my_employee.stored_data(store)
+        for store in self.store_data:
+            self.assertIn(store, self.my_employee.store_data)
 
 if __name__ == '__main__':
     unittest.main()
