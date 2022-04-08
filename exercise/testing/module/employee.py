@@ -4,7 +4,7 @@ class Employee:
     
     def __init__(self):
         "Entering the first name last name and the salary of an employee."
-        self.salary = int()
+        self.salary = int(1000)
     
     def give_raise(self, raise_amount=5000):
         """Incrementing the salary of an employee."""
