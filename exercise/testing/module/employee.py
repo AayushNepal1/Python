@@ -2,30 +2,15 @@ class Employee:
     """Creating an Employee Class."""
     
     
-    def __init__(self, first, last, salary):
-        self.first = first
-        self.last = last
-        self.salary = salary
-        self.store_data = []
-        
-    def get_data(self):
-        """Displaying The Questions"""
-        print("Enter your First Name, Last Name and Anual Salary: ")
-
-    def give_raise(self, increase=5000):
-        """Increment the salary of the Employee."""
-        amount = self.salary
-        if amount.isdigit():
-            self.salary = self.salary + increase
-        
-    def stored_data(self, *data):
-        """Store the employee data."""
-        self.store_data.append(data)
-
- 
+    def __init__(self):
+        "Entering the first name last name and the salary of an employee."
+        self.salary = int()
+    
+    def give_raise(self, raise_amount=5000):
+        """Incrementing the salary of an employee."""
+        self.salary = self.salary + raise_amount
+        return f"The incremented anual salary of an employee is: {int(self.salary)}"
+    
     def display_record(self):
-        for data in self.store_data:
-            for emp in data:
-                print(f"- {emp}")
-            print("------------------")
-        print()
+        """Displaying the information of an employee."""
+        return self.salary
